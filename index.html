@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CHARITY EVENT</title>
+    <script src="https://cdn.jsdelivr.net/npm/web3@1.5.2/dist/web3.min.js"></script>
+    <script src="front.js"></script>
+</head>
+<body>
+    <h1><center>CHARITY</center></h1>
+    <center><button onclick="connectMetaMask()">Connect MetaMask</button></center>
+    <center><p id="walletAddress"></p></center>
+    <hr>
+
+    <h2><center>Make Donations</center></h2>
+    <center><label for="donorInput">Donor:</label> <input type="text" id="ownerInput" /></center>
+    <br /> 
+
+    <center><label for="amountInput">Amount:</label><input type="number" id="nodeInput" /></center>
+    <br/> <br/>
+
+    <center><button onclick="donate()">DONATE</button></center>
+    <br /> 
+
+    <hr>
+    <h2><center>Donation Details</center></h2>
+    <center><label for="query">Donor:</label> <input type="text" id="ownerInput" /></center>
+    <br/>
+    <center><button onclick="getDetails()">Fetch</button></center>
+    <p><center>Amount Donated: <span id="amt"></center></span></p>
+</body>
+</html>
